@@ -3,24 +3,43 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
-
-    <title>Hello World</title>
-
-    <style>
-      body {
-        border: 1px solid black;
-      }
-    </style>
-
-    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
-         so we use a script file. -->
-    <script src="app.js" defer></script>
-
+    <title>Taskdoer:Home</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style> p{background: grey;}</style>
+    
   </head>
 
   <body>
     <!-- This code is in the public domain. Enjoy! -->
-    <h1>Hello World</h1>
+    
+      
+      
+      <div class="ui-grid-a"> 
+          <div class="ui-block-a">
+              <p>Todoer:Home</p>
+          </div>
+          <div class="ui-block-c">
+              <img src="icons/add_new.png" alt="Add new" />
+          </div>
+          <div class="ui-block-d">
+              <img src="icons/settings.png" alt="Settings" />
+          </div>
+           
+      </div>      
+      
+      <section class="Tasks" class="ui-corner-all">
+      <h2> Tasks List</h2>
+      <p> List of taks will come here.</p>
+      <a href="/add_task.html"> this is a link to second page</a>
+      </section>
+  
+
+    <!-- Inline scripts are forbidden in Firefox OS apps (CSP restrictions),
+         so we use a script file. -->
+    <script src="/js/app.js" defer></script>
+    
+    
   </body>
 
 </html>
